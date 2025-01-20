@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('modules/admin/pages/dashboard/index');
 });
+
+Route::get('/rooms/create', function () {
+    return view('modules/admin/pages/room/create/index');
+});
+
